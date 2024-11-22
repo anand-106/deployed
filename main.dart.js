@@ -98581,7 +98581,7 @@ A.aK8.prototype={
 $0(){var s=0,r=A.I(t.P),q,p,o,n,m,l,k,j
 var $async$$0=A.E(function(a,b){if(a===1)return A.F(b,r)
 while(true)switch(s){case 0:s=2
-return A.C($.rq().D8(0,".env"),$async$$0)
+return A.C($.rq().D8(0,"env"),$async$$0)
 case 2:if($.ar==null)A.aNp()
 $.ar.toString
 s=3
