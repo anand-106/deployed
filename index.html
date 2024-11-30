@@ -69,17 +69,21 @@
       box-sizing: content-box;
       height: 40px;
       padding: 10px 10px;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       border-radius: 8px;
-
+      align-items: center;
     }
 
     .words {
-      
+      display: inline-block;
       overflow: hidden;
-      position: absolute;
+      position: relative;
+    }
+
+    .loader p {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
     }
 
     .words::after {
