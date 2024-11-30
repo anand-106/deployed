@@ -43,6 +43,12 @@
   <script src="main.dart.js" defer></script>
   <!-- Add this style before the closing head tag -->
   <style>
+    body {
+      background-color: #212121;
+      margin: 0;
+      padding: 0;
+    }
+
     .card {
       --bg-color: #212121;
       background-color: var(--bg-color);
@@ -52,6 +58,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
     }
     
     .loader {
@@ -63,15 +71,22 @@
       box-sizing: content-box;
       height: 40px;
       padding: 10px 10px;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
+      align-items: center;
+      gap: 8px;
       border-radius: 8px;
+    }
+
+    .loader p {
+      margin: 0;
     }
 
     .words {
       overflow: hidden;
       position: relative;
+      height: 40px;
+      display: flex;
+      align-items: center;
     }
 
     .words::after {
@@ -93,6 +108,7 @@
       padding-left: 6px;
       color: #956afa;
       animation: spin_4991 4s infinite;
+      line-height: 40px;
     }
 
     @keyframes spin_4991 {
@@ -133,7 +149,8 @@
 
   
 </head>
-<body>
+<body style="background-color: #212121;">
+  <!-- Replace the previous loading div with this one -->
   <div id="loading">
     <div class="card">
       <div class="loader">
