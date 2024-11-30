@@ -83,8 +83,11 @@
     }
 
     .words {
+      display: inline-block;
       overflow: hidden;
       position: relative;
+      height: 40px;
+      width: 150px;
     }
 
     .words::after {
@@ -92,10 +95,11 @@
       position: absolute;
       inset: 0;
       background: linear-gradient(
-        var(--bg-color) 10%,
-        transparent 30%,
-        transparent 70%,
-        var(--bg-color) 90%
+        to right,
+        #212121 0%,
+        transparent 10%,
+        transparent 90%,
+        #212121 100%
       );
       z-index: 20;
     }
